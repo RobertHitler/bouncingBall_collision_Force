@@ -1,5 +1,5 @@
-Ball[] balls = {new Ball(100,150,random(20,30)),
-               new Ball(200,200,random(40,60))};
+Ball[] balls = {new Ball(50,100,random(20,30)),
+               new Ball(200,120,random(40,60))};
 
 //float bor = 40;
 
@@ -13,7 +13,7 @@ void draw(){
   //fill(255);
   //rect(20,20,width-bor,height-bor);
   for (Ball ball : balls) {
-     PVector gravity = new PVector(0,0.1);
+     PVector gravity = new PVector(0.05,0.5);
     // Apply gravity
     ball.applyForce(gravity);
   }

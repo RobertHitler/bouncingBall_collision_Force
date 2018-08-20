@@ -50,6 +50,7 @@ boolean distance(Ball other){
     
     void applyForce(PVector force){
     this.acc=force;
+    this.acc.mult(.1);
     }
    
     void collisionCheck(){
